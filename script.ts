@@ -75,6 +75,8 @@ function updateResumeContent(data: ResumeData): void {
     setStyleWidth('resumeJavascript', data.javascript);
     setStyleWidth('resumeReact', data.react);
     setStyleWidth('resumeNextjs', data.nextjs);
+    document.getElementById("resumeBtn")!.innerText = "EDIT"
+
 
     const customBtn = document.getElementById('customBtn') as HTMLElement;
     if (customBtn) customBtn.innerText = "EDIT";

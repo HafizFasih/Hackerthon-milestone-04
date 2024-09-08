@@ -48,6 +48,7 @@ function updateResumeContent(data) {
     setStyleWidth('resumeJavascript', data.javascript);
     setStyleWidth('resumeReact', data.react);
     setStyleWidth('resumeNextjs', data.nextjs);
+    document.getElementById("resumeBtn").innerText = "EDIT";
     var customBtn = document.getElementById('customBtn');
     if (customBtn)
         customBtn.innerText = "EDIT";
