@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Template</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mode-select">
+        <button id="resumeBtn">RESUME</button>
+        <button id="customBtn">CUSTOM</button>
+      </div>
+      <div class="mainBox">
+        <div class="resume">
+          <div class="left">
+            <div class="profile-image"></div>
+            <h2 id="resumeName">Muhammad Fasih</h2>
+            <h4 id="developer">Fullstack Developer</h4>
+            <div class="info">
+              <p id="resumeAddress"><span></span> Johar, Karachi</p>
+              <p id="resumeContact"><span></span> +92 3102137073</p>
+              <p id="resumeEmail">
+                <span></span> fasihmuhamm<br />ad972@gmail<br />.com
+              </p>
+              <p id="resumeWebsite"><span></span> www.fasih.com</p>
+            </div>
+
+            <div class="skills">
+              <h3>Skills</h3>
+              <div class="skill-item">
+                HTML
+                <div class="bar">
+                  <div
+                    class="progress"
+                    id="resumeHtml"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                CSS
+                <div class="bar">
+                  <div class="progress" id="resumeCss" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                JavaScript
+                <div class="bar">
+                  <div
+                    class="progress"
+                    id="resumeJavascript"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                Reactjs
+                <div class="bar">
+                  <div
+                    class="progress"
+                    id="resumeReact"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                Nextjs
+                <div class="bar">
+                  <div
+                    class="progress"
+                    id="resumeNextjs"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="social">
+              <h3>Social</h3>
+              <div class="social-item" id="resumeFacebook">
+                <span class="pic a"></span> <a href="https://www.facebook.com" target="_blank">Facebook</a>
+              </div>
+              <div class="social-item" id="resumeTwitter">
+                <span class="pic b"></span> <a href="https://www.twitter.com" target="_blank">Twitter</a>
+              </div>
+              <div class="social-item" id="resumeLinkedIn">
+                <span class="pic d"></span> <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+              </div>
+              <div class="social-item" id="resumeYouTube">
+                <span class="pic c"></span> <a href="https://www.youtube.com" target="_blank">YouTube</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="section">
+              <h2>About Me</h2>
+              <p id="resumeAboutMe">
+                I am Muhammad Fasih, a fullstack developer and intermediate
+                student aiming to learn advanced programming. I have passed my
+                intermediate exams and am preparing to join NED University. I am
+                well-versed in web development, with proficiency in JavaScript,
+                TypeScript, Python, HTML, CSS, Tailwind CSS, React, and Next.js.
+                I am also currently a student at PIAIC and GIAIC, learning
+                generative AI and web development.
+              </p>
+            </div>
+
+            <div class="section">
+              <h2>Work Experience</h2>
+              <span id="resumeWorkExperience">
+                <h3>2022 - Present</h3>
+                <p>
+                  Freelance Web Developer: Worked on various fullstack web
+                  development projects using JavaScript, TypeScript, React, and
+                  Next.js. Designed and built responsive websites with modern
+                  frameworks.
+                </p>
+                <h3>2021 - 2022</h3>
+                <p>
+                  Intern at ABC Tech: Assisted in developing front-end
+                  components and optimizing user interfaces for web
+                  applications.
+                </p>
+                <h3>2020 - 2021</h3>
+                <p>
+                  Student Developer: Completed multiple personal and
+                  collaborative projects, developing web applications, enhancing
+                  UI/UX design, and exploring new technologies in the field.
+                </p>
+              </span>
+            </div>
+
+            <div class="section">
+              <h2>Education</h2>
+              <span id="resumeEducation">
+                <h3>2024 - Future</h3>
+                <p>BS in Computer Science (Expected) - NED University</p>
+                <h3>2020 - 2023</h3>
+                <p>Intermediate - Karachi Board</p>
+              </span>
+            </div>
+
+            <div class="section hobby-section" id="hobbies">
+              <h2>Hobbies</h2>
+              <div class="hobby-icons">
+                <div class="icon">🎮</div>
+                <div class="line"></div>
+                <div class="icon">🎵</div>
+                <div class="line"></div>
+                <div class="icon">✈️</div>
+                <div class="line"></div>
+                <div class="icon">📚</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form">
+          <div class="form-container">
+            <h2>Custom Form</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="website">Website</label>
+                <input type="url" id="website" name="website" />
+              </div>
+              <div class="form-group">
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" required />
+              </div>
+              <div class="form-group">
+                <label for="facebook">Facebook Link</label>
+                <input type="url" id="facebook" name="facebook" />
+              </div>
+              <div class="form-group">
+                <label for="twitter">Twitter Link</label>
+                <input type="url" id="twitter" name="twitter" />
+              </div>
+              <div class="form-group">
+                <label for="linkedin">LinkedIn Link</label>
+                <input type="url" id="linkedin" name="linkedin" />
+              </div>
+              <div class="form-group">
+                <label for="youtube">YouTube Link</label>
+                <input type="url" id="youtube" name="youtube" />
+              </div>
+              <div class="form-group">
+                <label for="about">About Me</label>
+                <textarea id="about" name="about" rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="education">Skills</label>
+                <textarea
+                  id="education"
+                  name="education"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="work">Work Experience</label>
+                <textarea id="work" name="work" rows="4" required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="html">HTML %</label>
+                <input
+                  type="number"
+                  id="html"
+                  name="html"
+                  min="0"
+                  max="100"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="css">CSS %</label>
+                <input
+                  type="number"
+                  id="css"
+                  name="css"
+                  min="0"
+                  max="100"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="javascript">JavaScript %</label>
+                <input
+                  type="number"
+                  id="javascript"
+                  name="javascript"
+                  min="0"
+                  max="100"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="react">React %</label>
+                <input
+                  type="number"
+                  id="react"
+                  name="react"
+                  min="0"
+                  max="100"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="nextjs">Nextjs %</label>
+                <input
+                  type="number"
+                  id="nextjs"
+                  name="nextjs"
+                  min="0"
+                  max="100"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="profileImage">Profile Image</label>
+                <input type="file" id="profileImage" name="profileImage" accept="image/*" />
+              </div>
+              <div class="form-group">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

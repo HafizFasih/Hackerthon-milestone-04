@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5vh 0;
+  flex-direction: column;
+}
+
+.resume {
+  display: flex;
+  width: 60vw;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left {
+  width: 30%;
+  background-color: #1e9cc4;
+  padding: 20px;
+  color: white;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: url(/assets/profile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.left h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.left h4 {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.left .info {
+  margin-bottom: 30px;
+}
+
+.info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.info p span {
+  width: 25px;
+  height: 25px;
+  background-color: #1e9cc4;
+  border: 1px solid white;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.skills {
+  margin-bottom: 30px;
+}
+
+.skills h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills .skill-item {
+  margin-bottom: 10px;
+}
+
+.skills .bar {
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 5px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.skills .bar .progress {
+  height: 100%;
+  background-color: #fff;
+}
+
+.social {
+  margin-top: 20px;
+}
+.social .pic {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1e9cc4;
+}
+.social .a {
+  background-image: url(/assets/facebook.svg);
+}
+.social .b {
+  background-image: url(/assets/twitter.svg);
+}
+.social .c {
+  background-image: url(/assets/youtube.svg);
+}
+.social .d {
+  background-image: url(/assets/linkdin.svg);
+}
+.social .social-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.social .social-item span {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.right {
+  width: 70%;
+  padding: 30px;
+  background-color: white;
+}
+
+.right h2 {
+  font-size: 1.5rem;
+  color: #1e9cc4;
+  margin-bottom: 20px;
+}
+
+.right .section {
+  margin-bottom: 30px;
+}
+
+.right .section h3 {
+  margin-bottom: 10px;
+  color: #1e9cc4;
+}
+
+.right .section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.hobby-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hobby-section .icon {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid #1e9cc4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby-section .line {
+  width: 30px;
+  height: 2px;
+  background-color: #1e9cc4;
+}
+
+.hobby-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mode-select {
+  background-color: #1e9cc4;
+  height: 8vh;
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form {
+  height: auto;
+  display: none;
+  background-color: white;
+  width: 60vw;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mode-select button {
+  background-color: transparent;
+  width: 50%;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.mode-select button:first-child {
+  border-top-left-radius: 10px;
+}
+
+.mode-select button:last-child {
+  border-top-right-radius: 10px;
+}
+
+.mode-select button:hover {
+  background-color: #49badc;
+}
+
+@media (max-width: 768px) {
+  .hobby-icons .circle {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+    width: 90vw;
+  }
+  .form{
+    width: 90vw;
+  }
+  .form-container{
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .mode-select {
+    width: 90vw;
+  }
+}
+@media (max-width: 480px) {
+  .hobby-icons .circle {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hobby-icons .circle {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left {
+    padding: 15px;
+  }
+
+  .right {
+    padding: 15px;
+  }
+
+  .skills .skill-item {
+    font-size: 0.8rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .right h2 {
+    font-size: 1.2rem;
+  }
+
+  .info p {
+    font-size: 0.8rem;
+  }
+}
+.form-container {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.form-container h2 {
+  color: #1e9cc4;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #1e9cc4;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group button {
+  background-color: #1e9cc4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+  background-color: #49badc;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
