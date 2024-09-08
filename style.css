@@ -252,6 +252,8 @@ body {
   .resume {
     flex-direction: column;
     width: 90vw;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
   .form{
     width: 90vw;
